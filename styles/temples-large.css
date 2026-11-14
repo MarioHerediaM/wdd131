@@ -1,0 +1,26 @@
+
+@media screen and (min-width: 700px) {
+
+    /* Hide the hamburger button */
+    #menuButton {
+        display: none;
+    }
+
+    /* Display the navigation horizontally */
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 0;
+    }
+
+    /* Display three columns of temples */
+    main {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Make the title occupy the entire row */
+    main h1 {
+        grid-column: 1 / 4;
+    }
+}
